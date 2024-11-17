@@ -1,0 +1,78 @@
+body{
+  background-color: 	#36454F;
+}
+
+.navbar .navbar-items {
+  margin-left: 800px; 
+ 
+}
+.bg-body-tertiary{
+  background-color: black !important;
+  padding: 15px; 
+}
+.navbar-brand{
+  color: aliceblue;
+  text-align: justify;
+}
+.navbar .nav-link {
+  color:#E0B0FF; 
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #BF40BF; /* Change this to your desired hover color */
+ 
+}
+:host {
+  display: block;
+  background-color: #36454F;
+  
+  min-height: 100vh;  /* Ensures that the background color takes up the full viewport height */
+}
+/* Basic mobile styling */
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .nav-item a {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-item a {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+
+/* General input and task container adjustments */
+input, textarea {
+  width: 100%;
+  max-width: 100%;
+}
+
+.task-container, .form-group {
+  margin-bottom: 15px;
+}
+

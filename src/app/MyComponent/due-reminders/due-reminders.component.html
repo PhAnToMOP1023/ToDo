@@ -1,0 +1,49 @@
+<div class="container">
+  <h2>Due Dates & Reminders</h2>
+
+  <!-- Form to Add New Task -->
+  <div class="add-task-form">
+    <h3>Add New Task</h3>
+    <form (ngSubmit)="onAddTask()">
+      <div class="form-group">
+        <label for="taskName">Task Name</label>
+        <input id="taskName" [(ngModel)]="newTask.name" name="name" class="form-control" placeholder="Task Name" required />
+      </div>
+      <div class="form-group">
+        <label for="dueDate">Due Date</label>
+        <input id="dueDate" [(ngModel)]="newTask.dueDate" name="dueDate" type="date" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="reminder">Reminder Time</label>
+        <input id="reminder" [(ngModel)]="newTask.reminder" name="reminder" type="datetime-local" class="form-control" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Add Task</button>
+    </form>
+  </div>
+
+  <!-- Display Tasks -->
+  <div *ngIf="tasks.length > 0" class="task">
+    <h3>Your Tasks</h3>
+    <ul class="list-group">
+      <li *ngFor="let task of tasks" class="list-group-item">
+        <div >
+          <strong>{{ task.name }}</strong>
+        </div>
+        <div class="task-info">
+          <div class="task-due"><strong>Due:</strong> {{ task.dueDate }}</div>
+          <div class="task-reminder"><strong>Reminder:</strong> {{ task.reminder }}</div>
+        </div>
+        
+        
+        <!-- Edit/Delete buttons stacked below each other -->
+        <button (click)="onEditTask(task)" class="btn btn-warning btn-sm">Edit</button>
+        <button (click)="onDeleteTask(task.id)" class="btn btn-danger btn-sm">Delete</button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Message when no tasks are available -->
+  <div *ngIf="tasks.length === 0">
+    <p>No tasks added yet. Please add a task to get started.</p>
+  </div>
+</div>

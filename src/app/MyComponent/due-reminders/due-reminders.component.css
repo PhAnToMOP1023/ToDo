@@ -1,0 +1,83 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(54, 69, 79, 0.5); /* 50% transparent background */
+    border: 2px solid rgba(204, 204, 204, 0.8); /* Semi-transparent border */
+  }
+ 
+  
+
+.form-group {
+    
+    margin-bottom: 20px;
+    border-radius: 3px;
+    color:#E0B0FF ;
+  }
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 8px;
+}
+.ul{
+    border-radius: 8px;
+     
+    background-color: rgba(54, 69, 79, 0.5); /* 50% transparent background */
+    border: 2px solid rgba(204, 204, 204, 0.8); /* Semi-transparent border */
+
+}
+
+h2{
+  color: #E0B0FF;
+}
+h3{
+  color: #E0B0FF;
+  margin-bottom: 20px;
+}
+input{
+  background-color: rgba(54, 69, 79, 0.5); /* 50% transparent background */
+  border: 2px solid rgba(204, 204, 204, 0.8); /* Semi-transparent border */
+  color: #E0B0FF;
+}
+.btn-primary{
+  background-color: #E0B0FF;
+  color: black;
+  margin-bottom: 50px;
+}
+
+/* Mobile view for task container */
+@media (max-width: 576px) {
+  .task-form {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .task-title, .task-description {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Styling for larger screens */
+@media (min-width: 992px) {
+  .task-form {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .task-title, .task-description {
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive button */
+.button {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+

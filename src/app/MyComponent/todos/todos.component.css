@@ -1,0 +1,30 @@
+.Your{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Optional: to stack items vertically */
+    margin: 20px auto; /* Center the container within the parent */
+    padding: 15px; 
+    color: #CF9FFF;
+    
+}
+.No-To-Do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Optional: to stack items vertically */
+    height: 100%; /* Adjust height if needed */
+    margin: 20px auto; /* Center the container within the parent */
+    padding: 20px; /* Optional: for spacing */
+    color: #CF9FFF;
+
+
+}
+.container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+h1{
+    color: #CF9FFF;
+}

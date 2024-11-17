@@ -1,0 +1,29 @@
+<div class="box">
+    <h4>Add Todos</h4>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-floating title">
+        <input 
+          type="text" 
+          class="form-control" 
+          id="title" 
+          placeholder="Todo Title"
+          [(ngModel)]="title" 
+          name="title">
+        <label for="title">Todo Title</label>
+      </div>
+  
+      <div class="form-floating desc">
+        <input 
+          type="text" 
+          class="form-control" 
+          id="desc" 
+          placeholder="Todo Description"
+          [(ngModel)]="desc" 
+          name="desc">
+        <label for="desc">Todo Description</label>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Add Todo</button>
+    </form>
+  </div>
+  
