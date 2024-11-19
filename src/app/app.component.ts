@@ -9,19 +9,25 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, TodosComponent, RouterModule, FormsModule, CommonModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'], // Corrected to `styleUrls`
+  styleUrls: ['./app.component.css'], 
 })
 export class AppComponent {
+
   title = 'To-Do-App';
+  drawerOpen = false;
   
 
   constructor() {
     // Initial setup if needed
     this.title = 'To-Do-App';
+    
   }
+}
   
     
 
  
   
-}
+
+
+

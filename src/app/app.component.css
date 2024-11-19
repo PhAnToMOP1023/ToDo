@@ -1,5 +1,8 @@
 body{
   background-color: 	#36454F;
+  width: 100%;
+  height: 100%;
+
 }
 
 .navbar .navbar-items {
@@ -25,11 +28,21 @@ body{
 :host {
   display: block;
   background-color: #36454F;
-  
+  width: 100%;
   min-height: 100vh;  /* Ensures that the background color takes up the full viewport height */
 }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23CF9FFF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
 /* Basic mobile styling */
+
+
+
 @media (max-width: 576px) {
+
+ 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -44,14 +57,13 @@ body{
     padding: 5px;
   }
 
-  .btn {
-    width: 100%;
-    margin-bottom: 5px;
-  }
+
 }
 
 /* Tablet adjustments */
 @media (max-width: 768px) {
+
+
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -64,6 +76,7 @@ body{
   .container {
     padding: 15px;
   }
+
 }
 
 /* General input and task container adjustments */

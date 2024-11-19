@@ -3,22 +3,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Optional: to stack items vertically */
-    
 
 }
 .title{
     font-size: 1rem;
-    
     margin-bottom: 10px;
-    width: 500px;
+    max-width:500px;
     text-align: center;
     color: #CF9FFF;
-       
     
 }
 .desc{
     font-size: 1rem;
-    
     margin-bottom: 10px;
     width: 500px;
     color: #CF9FFF;
@@ -40,4 +36,38 @@ h4{
 input{
     background-color: rgba(54, 69, 79, 0.5); 
     border: 2px solid rgba(204, 204, 204, 0.8);
+   
+    
+}
+
+/* Mobile screens (up to 576px) */
+@media (max-width: 576px) {
+    .box {
+        
+        max-width: 100%; /* Take up most of the screen width */
+       
+    }
+    .title{
+        max-width: 55%;
+        margin-left: 140px;
+    }
+    .desc{
+        max-width: 55%;
+       margin-left: 140px;
+    }
+    .btn-primary {
+        background-color:#CF9FFF; /* Custom background color */
+        margin-left: 140px;
+            
+    }
+
+}
+
+/* Tablet screens (up to 768px) */
+@media (max-width: 768px) {
+    .box {
+        
+        max-width: 95%; /* Slightly larger width for tablets */
+        
+    }
 }
