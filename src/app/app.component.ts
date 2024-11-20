@@ -12,22 +12,17 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app.component.css'], 
 })
 export class AppComponent {
-
   title = 'To-Do-App';
-  drawerOpen = false;
+
   
+  isDrawerOpen = false;
 
   constructor() {
-    // Initial setup if needed
     this.title = 'To-Do-App';
-    
+  }
+
+  
+  toggleDrawer() {
+    this.isDrawerOpen = !this.isDrawerOpen;
   }
 }
-  
-    
-
- 
-  
-
-
-
