@@ -7,6 +7,7 @@
     margin: 20px auto; /* Center the container within the parent */
     padding: 15px; 
     color: #CF9FFF;
+    text-shadow: 0 0 8px #BF40BF, 0 0 40px #BF40BF;
     
 }
 .No-To-Do{
@@ -17,7 +18,7 @@
     margin: 20px auto; /* Center the container within the parent */
     padding: 20px; /* Optional: for spacing */
     color: #CF9FFF;
-
+    text-shadow: 0 0 8px #BF40BF, 0 0 40px #BF40BF;
 
 }
 .container{
@@ -27,4 +28,5 @@
 }
 h1{
     color: #CF9FFF;
+    text-shadow: 0 0 8px #BF40BF, 0 0 40px #BF40BF;
 }

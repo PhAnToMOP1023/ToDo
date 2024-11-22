@@ -29,13 +29,15 @@ body{
 .navbar-brand{
   color: aliceblue;
   text-align: justify;
+  text-shadow: 0 0 8px #BF40BF, 0 0 40px #BF40BF;
 }
 .navbar .nav-link {
   color:#E0B0FF; 
   transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 0 0 8px #E0B0FF, 0 0 40px #E0B0FF ;  
 }
 .navbar .nav-link:hover {
-  color: #BF40BF; /* Change this to your desired hover color */
+  color: #BF40BF; 
  
 }
 
@@ -80,12 +82,14 @@ body{
   border-bottom: 1px solid #4B0082; /* Subtle purple line */
   background-color: #292929; /* Darker header tone */
   color: #E0B0FF;
+  text-shadow: 0 0 8px #BF40BF, 0 0 40px #BF40BF; 
 }
 .drawer-title {
   margin: 0;
   font-size: 18px;
   color: #E0B0FF; /* Matches the theme */
   margin-bottom: 10px;
+  text-shadow: 0 0 8px #BF40BF, 0 0 40px #BF40BF; 
 }
 .drawer-header .btn-close {
   align-self: flex-start;
@@ -117,16 +121,20 @@ body{
 .drawer-content ul {
   list-style: none;
   padding: 0;
+
 }
 
 .drawer-content ul li {
   margin-bottom: 1rem;
+  text-shadow: 0 0 8px #BF40BF, 0 0 40px #BF40BF;
+  
 }
 
 .drawer-content ul li a {
   text-decoration: none;
   color: #E0B0FF; /* Matches navbar links */
   transition: color 0.3s, text-shadow 0.3s;
+  
 }
 
 .drawer-content ul li a:hover {
@@ -135,7 +143,7 @@ body{
   transform: translateX(5px); /* Subtle slide effect on hover */
 }
 
-/* Responsive hamburger button */
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23CF9FFF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
